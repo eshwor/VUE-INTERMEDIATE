@@ -1,23 +1,26 @@
+<!-- This is the file where you can merge all the component together -->
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div id="main-app">
+    <NewComponent></NewComponent>
   </div>
 </template>
 
 <script>
+import NewComponent from './components/TestComponent'
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    'NewComponent': NewComponent
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  h1 {
+     color: blue;
+     text-align: center;
+ }
+ #main-app {
+   text-align: center;
+ }
 </style>
