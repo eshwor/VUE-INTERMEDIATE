@@ -1,16 +1,16 @@
 <!-- This is the file where you can merge all the component together -->
 <template>
   <div id="main-app">
-    <NewComponent></NewComponent>
+    <User></User>
   </div>
 </template>
 
 <script>
-import NewComponent from './components/TestComponent'
+import User from './components/User'
 export default {
   name: 'app',
   components: {
-    'NewComponent': NewComponent
+    User
   }
 }
 </script>
